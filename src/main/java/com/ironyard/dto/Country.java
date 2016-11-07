@@ -16,12 +16,12 @@ public class Country {
     //curl -v  -X GET "http://api.undata-api.org/WB/GDP%20growth%20(annual%20percent)/countries?app_id=d472233a&app_key=bb0c4591863b91d6208ca6679af8d0e1"
 
     private String name;
-    @OneToMany(cascade = CascadeType.ALL);
+    @OneToMany(cascade = CascadeType.ALL)
     List<Records>records;
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO);
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     public String getName() {return name;}
