@@ -31,7 +31,7 @@ public class Application {
         RestTemplate restTemplate = new RestTemplate();
 
 
-        Country[] cntry = restTemplate.getForObject("http://api.undata-api.org/WB/GDP%20growth%20(annual%20percent)/countries?app_id=d472233a&app_key=bb0c4591863b91d6208ca6679af8d0e1",Country[].class);
+        Country[] cntry = restTemplate.getForObject("http://api.undata-api.org/WB/GDP growth (annual percent)/countries?app_id=d472233a&app_key=bb0c4591863b91d6208ca6679af8d0e1",Country[].class);
         log.info(cntry.toString());
     }
 
@@ -41,7 +41,7 @@ public class Application {
                 .groupName("Country")
                 .apiInfo(apiInfo())
                 .select()
-                .paths(regex("/Countries.*"))
+                .paths(regex("/country.*"))
                 .build();
     }
 

@@ -16,7 +16,7 @@ public class Records {
     //curl -v  -X GET "http://api.undata-api.org/WB/GDP%20growth%20(annual%20percent)/Australia/records?app_id=d472233a&app_key=bb0c4591863b91d6208ca6679af8d0e1"
 
 
-    //want to exclude 'footnotes' since there is no data in String 'footnotes'.
+    //excluding footnotes
 
 
     @JsonProperty(value = "area_name")
